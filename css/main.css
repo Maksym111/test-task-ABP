@@ -1,0 +1,13 @@
+main {
+  margin-top: 64px;
+}
+
+.products-list {
+  display: flex;
+  gap: 30px;
+}
+
+.products-list__item {
+  position: relative;
+  overflow: hidden;
+}
