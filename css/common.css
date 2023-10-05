@@ -57,6 +57,8 @@ header {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list__item:hover .link {
@@ -65,6 +67,7 @@ header {
 
 .link--active {
   font-weight: 700;
+  color: #0055aa;
 }
 
 .title {
@@ -74,6 +77,34 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.title--left {
+  text-align: left;
+}
+
+.btn-back {
+  display: inline-block;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  margin: 30px 0;
+  padding: 15px 20px;
+
+  border: none;
+  border-radius: 16px;
+
+  text-transform: uppercase;
+  color: white;
+  background-color: #cf8000;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-back:hover {
+  background-color: #b97200;
 }
 
 footer {

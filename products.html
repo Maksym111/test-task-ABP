@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Маркетплейс автозапчастин" />
+    <meta name="keywords" content="всі товари, автозапчастини, авто" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/productType.css" />
+    <link rel="stylesheet" href="./css/products.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="icon" href="./images/favicon.png" type="image/png" />
-    <title>Document</title>
+    <title>Всі товари</title>
   </head>
   <body>
     <header>
@@ -26,23 +38,132 @@
 
           <ul class="nav__list">
             <li class="list__item">
-              <a href="/" class="link link--active">Головна</a>
+              <a href="/" class="link">Головна</a>
             </li>
             <li class="list__item">
-              <a href="./products.html" class="link">Автозапчастини</a>
+              <a href="./products.html" class="link link--active"
+                >Автозапчастини</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Перехід на головну сторінку -->
-    <a href="/">Головна</a>
-    <!-- Перехід на сторінку деталей продукту "Масло" -->
-    <a href="/products/1">Масло</a>
-    <!-- Перехід на сторінку деталей продукту "Фільтри" -->
-    <a href="/products/2">Фільтри</a>
-    <!-- Перехід на сторінку деталей продукту "Шини" -->
-    <a href="/products/3">Шини</a>
+
+    <section class="all-cards">
+      <h3 class="title">Всі товари</h3>
+      <div class="container">
+        <div class="recommendations__wrapper">
+          <article class="recommendation">
+            <a href="./products/1.html" class="recommendation__link-wrapper">
+              <img
+                src="../images/oil/oil-mannol-energy.jpg"
+                alt="Олія Mannol Energy"
+                width="230"
+                height="230"
+                class="recommendation__img"
+              />
+              <h4 class="recommendation__title">Mannol Energy 5W-30</h4>
+              <p class="recommendation__descr">
+                Моторна олива Mannol Energy 5W-30 (4 л)
+              </p>
+              <p class="recommendation__price">
+                <strong class="number-price">872</strong> грн
+              </p>
+            </a>
+            <a
+              href="https://avto.pro/catalog/hyundai/elantra/filtr-salona-m28552/?type=68075"
+              target="_blank"
+              class="recommendation__btn-buy"
+            >
+              Купити
+            </a>
+          </article>
+
+          <article class="recommendation">
+            <a href="./products/3.html" class="recommendation__link-wrapper">
+              <img
+                src="../images/tires/tire-blizzak-revo-gz-205.jpg"
+                alt="Шина фірми Blizzak"
+                width="230"
+                height="230"
+                class="recommendation__img"
+              />
+              <h4 class="recommendation__title">Bridgestone BLIZZAK Revo GZ</h4>
+              <p class="recommendation__descr">
+                Шини Bridgestone BLIZZAK Revo GZ (205/60R16 92S)
+              </p>
+              <p class="recommendation__price">
+                <strong class="number-price">6500</strong> грн
+              </p>
+            </a>
+            <a
+              href="https://avto.pro/catalog/audi/a6/siny-m28849/?type=70539&cross=2091030429"
+              target="_blank"
+              class="recommendation__btn-buy"
+            >
+              Купити
+            </a>
+          </article>
+
+          <article class="recommendation">
+            <a href="./products/2.html" class="recommendation__link-wrapper">
+              <img
+                src="../images/filters/filter-hyundai-kia.jpg"
+                alt="Фільтр салону для Hyundai"
+                width="230"
+                height="230"
+                class="recommendation__img"
+              />
+              <h4 class="recommendation__title">Hyundai / Kia 0087902H000A</h4>
+              <p class="recommendation__descr">
+                Фільтр салону Hyundai / Kia 0087902H000A
+              </p>
+              <p class="recommendation__price">
+                <strong class="number-price">582</strong> грн
+              </p>
+            </a>
+            <a
+              href="https://avto.pro/catalog/hyundai/elantra/filtr-salona-m28552/?type=68075"
+              target="_blank"
+              class="recommendation__btn-buy"
+            >
+              Купити
+            </a>
+          </article>
+
+          <article class="recommendation">
+            <a
+              href="https://avto.pro/catalog/kia/sorento/maslo-motornoe-m29136/?type=79864"
+              class="recommendation__link-wrapper"
+              target="_blank"
+            >
+              <img
+                src="../images/oil/oil-motul-garden-2t.png"
+                alt="Олія фірми Motul"
+                width="230"
+                height="230"
+                class="recommendation__img"
+              />
+              <h4 class="recommendation__title">MOTUL Garden 2T</h4>
+              <p class="recommendation__descr">
+                Масло моторное MOTUL Garden 2T 2л (308902)
+              </p>
+              <p class="recommendation__price">
+                <strong class="number-price">689</strong> грн
+              </p>
+            </a>
+            <a
+              href="https://avto.pro/catalog/kia/sorento/maslo-motornoe-m29136/?type=79864"
+              target="_blank"
+              class="recommendation__btn-buy"
+            >
+              Купити
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-message">
