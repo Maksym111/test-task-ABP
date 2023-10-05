@@ -7,18 +7,17 @@ body {
   margin: 0 auto;
 }
 
-.header {
+header {
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
   right: 0;
 
+  height: 63px;
+
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-}
-
-.header__container {
 }
 
 .logo {
@@ -40,7 +39,7 @@ body {
 
 .nav__list {
   display: flex;
-  margin-left: 300px;
+  margin-left: 350px;
   gap: 40px;
 }
 
@@ -55,12 +54,13 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .list__item:hover .link {
-  font-weight: 700;
+  color: #ff9f05;
 }
 
 .link--active {
@@ -74,4 +74,31 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+footer {
+  height: 60px;
+  background-color: #2f303a;
+}
+
+.footer-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-message__title {
+  color: #ffffff;
+}
+
+.footer-message__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: #ff9f05;
+}
+
+.footer-message__link:hover {
+  text-decoration: underline;
 }

@@ -21,7 +21,7 @@
     <title>Маркетплейс автозапчастин</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container header__container">
         <nav class="nav">
           <a href="/" class="logo">
@@ -48,30 +48,48 @@
     </header>
 
     <main>
-      <section>
-        <h1>Маркетплейс автозапчастин</h1>
-        <p>Якийсь текст під заголовком</p>
+      <section class="hero">
+        <h1 class="hero__title">Маркетплейс автозапчастин</h1>
+        <p class="hero__sub-title">
+          Відкрийте для себе найкращі автозапчастини і зробіть своє авто
+          надійним партнером на дорозі
+        </p>
       </section>
-      <section class="section">
+      <section class="section section-avtodetails">
         <div class="container">
           <h2 class="title">Автозапчастини</h2>
           <ul class="products-list">
             <li class="products-list__item">
-              <a href="./products/1.html" class="">
-                <img src="#" alt="Види масел" />
-                <p class="">Масло</p>
+              <a href="./products/1.html" class="product-card">
+                <img
+                  src="./images/avtomobilnye-masla1.jpg"
+                  alt="Види масел"
+                  width="370"
+                  height="294"
+                />
+                <p class="product-card__title">Масло</p>
               </a>
             </li>
-            <li class="">
-              <a href="./products/2.html" class="">
-                <img src="#" alt="Види фільтрів" />
-                <p class="">Фільтри</p>
+            <li class="products-list__item">
+              <a href="./products/2.html" class="product-card">
+                <img
+                  src="./images/avto-filters.jpg"
+                  alt="Види фільтрів"
+                  width="370"
+                  height="294"
+                />
+                <p class="product-card__title">Фільтри</p>
               </a>
             </li>
-            <li class="">
-              <a href="./products/3.html" class="">
-                <img src="#" alt="Види шин" />
-                <p class="">Шини</p>
+            <li class="products-list__item">
+              <a href="./products/3.html" class="product-card">
+                <img
+                  src="./images/tires.jpg"
+                  alt="Види шин"
+                  width="370"
+                  height="294"
+                />
+                <p class="product-card__title">Шини</p>
               </a>
             </li>
           </ul>
@@ -79,8 +97,12 @@
       </section>
     </main>
     <footer>
-      <p>Для більшої інформації відвідайте сайт</p>
-      <a href="https://avto.pro/">Avto.pro</a>
+      <div class="footer-message">
+        <p class="footer-message__title">
+          Для більшої інформації відвідайте сайт
+        </p>
+        <a href="https://avto.pro/" class="footer-message__link">Avto.pro</a>
+      </div>
     </footer>
   </body>
 </html>
